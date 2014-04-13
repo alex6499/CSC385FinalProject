@@ -1,0 +1,42 @@
+import java.util.*;
+import java.lang.*;
+
+public class ExtraSort{
+
+
+
+	public static void radixSort(String[] array, int n, int d){
+
+		//you need to implement this sorting method
+	}
+
+
+
+	public static void main(String[] args){
+		String[] array = GenerateData.getData(100000);
+		int n = array.length;
+
+
+		System.out.println("Origianl Data");
+		displayArray(array);
+
+
+		radixSort(array, n, d);
+
+		System.out.println("\nSorted Data");
+		displayArray(array);
+
+	}
+
+	static <T> void displayArray(T[] array){
+		for(int i=0;i<array.length; i++){
+			System.out.print(array[i]+" ");
+		}
+			System.out.print("\n");
+	}
+
+
+}
+
+
+
